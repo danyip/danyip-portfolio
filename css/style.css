@@ -3,6 +3,7 @@
 :root{
   --main-width: min(90vw, 1400px);
   --primary-colour: #004AAD;
+  --secondary-colour: #5ba7d1;
   font-family: 'Quicksand';
   font-size: 16px;
 }
@@ -18,8 +19,12 @@
   box-sizing: border-box;
 }
 
-body, h1, h2, h3, h4, h5, p{
+body, h1, h2, h3, h4, h5{
   margin: 0
+}
+
+body{
+  background-color: #ffffff;
 }
 
 header{
@@ -47,7 +52,7 @@ nav{
 
 .section{
   padding-top: 4rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .wrapper{
@@ -55,11 +60,50 @@ nav{
   margin: 0 auto;
 }
 
+.intro-container{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 4rem;
+}
+
 .hero-pic{
   width: 20rem;
   border-radius: 50%;
 }
 
-.nav{
+.message{
+  max-width: 50ch;
+  text-align: center;
+}
 
+.message h1{
+  
+  font-size: 8rem;
+  margin: 1rem 0;
+  color: var(--secondary-colour)
+}
+
+.message p{
+  line-height: 2rem;
+  font-size: 1.2rem;
+  /* font-weight: 400; */
+}
+
+.project-stack{
+  display: flex;
+  gap: 1rem;
+}
+
+.tech-wrapper{
+  /* border: 1px solid blue; */
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.icon-small{
+  height: 2rem;
 }
