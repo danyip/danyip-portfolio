@@ -142,7 +142,7 @@ nav{
 }
 
 .project-img{
-max-width: 50ch;
+width: min(50ch, 100%);
 height: auto;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
