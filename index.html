@@ -10,49 +10,58 @@
   </head>
   <body>
     <header>
-      <nav class="nav wrapper">
-        <h1><a href="#home" class="nav-link">Daniel Yip</a></h1>
-        <a href="#about" class="nav-link push">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <div class="dropdown">
-          <div class="nav-link dropdown-button">Contact</div>
-          <div class="dropdown-content">
-            <a href="mailto:hello@danyip.com" class="contact-dropdown-link">
-              <img src="./images/email.svg" alt="Email icon" />
-              <div>Email</div>
-            </a>
-            <a
-              href="https://twitter.com/___danyip___"
-              target="_blank"
-              class="contact-dropdown-link"
-            >
-              <img src="./images/twitter.svg" alt="Twitter icon" />
-              <div>Twitter</div>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/danyip/"
-              target="_blank"
-              class="contact-dropdown-link"
-            >
-              <img src="./images/linkedin.svg" alt="Linkedin icon" />
-              <div>Linkedin</div>
-            </a>
-            <a
-              href="https://github.com/danyip"
-              target="_blank"
-              class="contact-dropdown-link"
-            >
-              <img src="./images/github.svg" alt="Github icon" />
-              <div>Github</div>
-            </a>
-          </div>
-
-        </div>
+      <nav class=" wrapper">
+        <ul class="nav">
+          <li>
+            <h1><a href="#home" class="nav-link">Daniel Yip</a></h1>
+          </li>
+          <li class="push">
+            <a href="#about" class="nav-link ">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <div class="nav-link dropdown-button">Contact</div>
+              <div class="dropdown-content">
+                <a href="mailto:hello@danyip.com" class="contact-dropdown-link">
+                  <img src="./images/email.svg" alt="Email icon" />
+                  <div>Email</div>
+                </a>
+                <a
+                  href="https://twitter.com/___danyip___"
+                  target="_blank"
+                  class="contact-dropdown-link"
+                >
+                  <img src="./images/twitter.svg" alt="Twitter icon" />
+                  <div>Twitter</div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/danyip/"
+                  target="_blank"
+                  class="contact-dropdown-link"
+                >
+                  <img src="./images/linkedin.svg" alt="Linkedin icon" />
+                  <div>Linkedin</div>
+                </a>
+                <a
+                  href="https://github.com/danyip"
+                  target="_blank"
+                  class="contact-dropdown-link"
+                >
+                  <img src="./images/github.svg" alt="Github icon" />
+                  <div>Github</div>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <div id="home" class="wrapper section">
+      <section id="home" class="wrapper section">
         <article class="intro-container">
           <div class="message">
             <h1>Hello</h1>
@@ -77,9 +86,9 @@
             class="hero-pic"
           />
         </article>
-      </div>
+      </section>
 
-      <div id="about" class="wrapper section">
+      <section id="about" class="wrapper section">
         <h1 class="section-title">About</h1>
         <div class="about-wrapper">
           <article class="about-me-container">
@@ -90,16 +99,16 @@
               thrives on solving problems.
             </p>
             <p>
-              After more then a decade working in the high pressure world of
+              After more than a decade working in the high-pressure world of
               live event production, I bring a calm, methodical and determined
               approach to everything I do. I believe that the most important
               part of teamwork is communication and there is no greater
-              satisfaction then helping other people.
+              satisfaction than helping other people.
             </p>
             <p>
               Outside of work you'll often find me buried in a DIY project, in
               the kitchen trying out a new recipe or perfecting my skills as an
-              amatuer pizza chef.
+              amateur pizza chef.
             </p>
           </article>
           <article class="tech-skills-container">
@@ -108,135 +117,186 @@
               <div class="tech-subcat-container">
                 <h3>Languages</h3>
                 <div class="tech-icon-container">
-                  <img
-                    src="./images/javascript.svg"
-                    alt="Javascript icon"
-                    class="icon-medium"
-                    title="Javascript"
-                  />
-                  <img
-                    src="./images/ruby.svg"
-                    alt="Ruby icon"
-                    class="icon-medium"
-                    title="Ruby"
-                  />
-                  <img
-                    src="./images/html-5.svg"
-                    alt="HTML5 icon"
-                    class="icon-medium"
-                    title="HTML5"
-                  />
-                  <img
-                    src="./images/css-3.svg"
-                    alt="CSS3 icon"
-                    class="icon-medium"
-                    title="CSS3"
-                  />
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/javascript.svg"
+                      alt="Javascript icon"
+                      class="icon-medium"
+                      title="Javascript"
+                    />
+                    <div class="tech-label">Javascript</div>
+                  </div>
+
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/ruby.svg"
+                      alt="Ruby icon"
+                      class="icon-medium"
+                      title="Ruby"
+                    />
+                    <div class="tech-label">Ruby</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/html-5.svg"
+                      alt="HTML5 icon"
+                      class="icon-medium"
+                      title="HTML5"
+                    />
+                    <div class="tech-label">HTML5</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/css-3.svg"
+                      alt="CSS3 icon"
+                      class="icon-medium"
+                      title="CSS3"
+                    />
+                    <div class="tech-label">CSS3</div>
+                  </div>
                 </div>
               </div>
 
               <div class="tech-subcat-container">
                 <h3>Frameworks & Libraries</h3>
                 <div class="tech-icon-container">
-                  <img
-                    src="./images/react.svg"
-                    alt="react icon"
-                    class="icon-medium"
-                    title="React"
-                  />
-                  <img
-                    src="./images/vue.svg"
-                    alt="Vue.js icon"
-                    class="icon-medium"
-                    title="Vue.js"
-                  />
-                  <img
-                    src="./images/rails.svg"
-                    alt="Ruby On Rails icon"
-                    class="icon-medium"
-                    title="Ruby On Rails"
-                  />
-                  <img
-                    src="./images/nodejs.svg"
-                    alt="Node.js icon"
-                    class="icon-medium"
-                    title="Node.js"
-                  />
-                  <img
-                    src="./images/express.svg"
-                    alt="Express.js icon"
-                    class="icon-medium"
-                    title="Express.js"
-                  />
-                  <img
-                    src="./images/redux.svg"
-                    alt="Redux icon"
-                    class="icon-medium"
-                    title="Redux"
-                  />
-                  <img
-                    src="./images/socket.io.svg"
-                    alt="Socket.io icon"
-                    class="icon-medium"
-                    title="Socket.io"
-                  />
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/react.svg"
+                      alt="react icon"
+                      class="icon-medium"
+                      title="React"
+                    />
+                    <div class="tech-label">React</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/vue.svg"
+                      alt="Vue.js icon"
+                      class="icon-medium"
+                      title="Vue.js"
+                    />
+                    <div class="tech-label">Vue</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/rails.svg"
+                      alt="Ruby On Rails icon"
+                      class="icon-medium"
+                      title="Ruby On Rails"
+                    />
+                    <div class="tech-label">Ruby On Rails</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/nodejs.svg"
+                      alt="Node.js icon"
+                      class="icon-medium"
+                      title="Node.js"
+                    />
+                    <div class="tech-label">Node.js</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/express.svg"
+                      alt="Express.js icon"
+                      class="icon-medium"
+                      title="Express.js"
+                    />
+                    <div class="tech-label">Express</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/redux.svg"
+                      alt="Redux icon"
+                      class="icon-medium"
+                      title="Redux"
+                    />
+                    <div class="tech-label">Redux</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/socket.io.svg"
+                      alt="Socket.io icon"
+                      class="icon-medium"
+                      title="Socket.io"
+                    />
+                    <div class="tech-label">Socket.io</div>
+                  </div>
                 </div>
               </div>
 
               <div class="tech-subcat-container">
                 <h3>Databases</h3>
                 <div class="tech-icon-container">
-                  <img
-                    src="./images/postgresql.svg"
-                    alt="PostgreSQL icon"
-                    class="icon-medium"
-                    title="PostgreSQL"
-                  />
-                  <img
-                    src="./images/mongodb.svg"
-                    alt="MongoDB icon"
-                    class="icon-medium"
-                    title="MongoDB"
-                  />
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/postgresql.svg"
+                      alt="PostgreSQL icon"
+                      class="icon-medium"
+                      title="PostgreSQL"
+                    />
+                    <div class="tech-label">PostgreSQL</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/mongodb.svg"
+                      alt="MongoDB icon"
+                      class="icon-medium"
+                      title="MongoDB"
+                    />
+                    <div class="tech-label">MongoDB</div>
+                  </div>
                 </div>
               </div>
 
               <div class="tech-subcat-container">
                 <h3>Deployment and Version Control</h3>
                 <div class="tech-icon-container">
-                  <img
-                    src="./images/heroku-icon.svg"
-                    alt="Heroku icon"
-                    class="icon-medium"
-                    title="Heroku"
-                  />
-                  <img
-                    src="./images/netlify.svg"
-                    alt="Netlify icon"
-                    class="icon-medium"
-                    title="Netlify"
-                  />
-
-                  <img
-                    src="./images/git.svg"
-                    alt="Git icon"
-                    class="icon-medium"
-                    title="Git"
-                  />
-                  <img
-                    src="./images/github-icon.svg"
-                    alt="Github icon"
-                    class="icon-medium"
-                    title="Github"
-                  />
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/heroku-icon.svg"
+                      alt="Heroku icon"
+                      class="icon-medium"
+                      title="Heroku"
+                    />
+                    <div class="tech-label">Heroku</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/netlify.svg"
+                      alt="Netlify icon"
+                      class="icon-medium"
+                      title="Netlify"
+                    />
+                    <div class="tech-label">Netlify</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/git.svg"
+                      alt="Git icon"
+                      class="icon-medium"
+                      title="Git"
+                    />
+                    <div class="tech-label">Git</div>
+                  </div>
+                  <div class="tech-wrapper">
+                    <img
+                      src="./images/github-icon.svg"
+                      alt="Github icon"
+                      class="icon-medium"
+                      title="Github"
+                    />
+                    <div class="tech-label">Github</div>
+                  </div>
                 </div>
               </div>
             </div>
           </article>
         </div>
-      </div>
+      </section>
 
-      <div id="projects" class="wrapper section">
+      <section id="projects" class="wrapper section">
         <h1 class="section-title">Projects</h1>
         <article class="project-container">
           <img
@@ -487,40 +547,49 @@
             class="project-img"
           />
         </article>
-      </div>
+      </section>
     </main>
 
     <footer>
-      <div class="social-links">
-        <a href="mailto:hello@danyip.com" class="contact-link">
-          <img src="./images/email.svg" alt="Email icon" />
-          <div>Email</div>
-        </a>
-        <a
-          href="https://twitter.com/___danyip___"
-          target="_blank"
-          class="contact-link"
-        >
-          <img src="./images/twitter.svg" alt="Twitter icon" />
-          <div>Twitter</div>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/danyip/"
-          target="_blank"
-          class="contact-link"
-        >
-          <img src="./images/linkedin.svg" alt="Linkedin icon" />
-          <div>Linkedin</div>
-        </a>
-        <a
-          href="https://github.com/danyip"
-          target="_blank"
-          class="contact-link"
-        >
-          <img src="./images/github.svg" alt="Github icon" />
-          <div>Github</div>
-        </a>
-      </div>
+      <ul class="social-links">
+        <li>
+          <a href="mailto:hello@danyip.com" class="contact-link">
+            <img src="./images/email.svg" alt="Email icon" />
+            <div>Email</div>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://twitter.com/___danyip___"
+            target="_blank"
+            class="contact-link"
+          >
+            <img src="./images/twitter.svg" alt="Twitter icon" />
+            <div>Twitter</div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/danyip/"
+            target="_blank"
+            class="contact-link"
+          >
+            <img src="./images/linkedin.svg" alt="Linkedin icon" />
+            <div>Linkedin</div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/danyip"
+            target="_blank"
+            class="contact-link"
+          >
+            <img src="./images/github.svg" alt="Github icon" />
+            <div>Github</div>
+          </a>
+        </li>
+      </ul>
       <div>Designed and built by me in HTML, CSS and Javascript</div>
     </footer>
   </body>

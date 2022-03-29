@@ -3,7 +3,9 @@
 :root{
   --main-width: min(90vw, 1400px);
   --primary-colour: #004AAD;
-  --secondary-colour: #5ba7d1;
+  /* --secondary-colour: #5ba7d1; */
+  --secondary-colour: #449BCA;
+  --container-padding: 3rem;
   font-family: 'Quicksand';
   font-size: 16px;
 }
@@ -11,6 +13,7 @@
 @media screen and (max-width: 600px) {
   :root{
     font-size: 14px;
+    --container-padding: 1rem;
     }
 }
 
@@ -25,6 +28,12 @@ html{
 
 body, h1, h2, h3, h4, h5{
   margin: 0
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 p{
@@ -42,7 +51,7 @@ header{
   z-index: 1;
 }
 
-nav{
+.nav{
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -109,7 +118,6 @@ nav{
 
 .section{
   padding-top: 4rem;
-  min-height: 100vh;
 }
 
 .wrapper{
@@ -123,7 +131,7 @@ nav{
   flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
-  margin-top: 8rem;
+  margin: 8rem 0;
   gap: 4rem;
 }
 
@@ -198,20 +206,18 @@ nav{
 
 .about-wrapper{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
   margin-top: 2rem;
 }
 
 
-
 .about-me-container, .tech-skills-container{
-  /* margin: 0 auto; */
   width: 100%;
-  max-width: 60ch;
+  max-width: 80ch;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 1rem;
+  padding: var(--container-padding);
 }
 
 .about-me-container h1, .tech-skills-container h1{
@@ -226,23 +232,31 @@ nav{
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  color: var(--primary-colour);
+  /* color: var(--primary-colour); */
   text-align: center;
-  
+}
+
+.tech-subcat-container h3{
+  color: var(--primary-colour);
+  margin: 0.5rem 0;
+}
+
+.tech-label{
+  font-size: 0.9rem;
 }
 
 .tech-icon-container{
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 }
-
-
 
 #projects{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .project-container{
@@ -251,9 +265,8 @@ nav{
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: var(--container-padding);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
 
 .reverse{
@@ -308,7 +321,6 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
 }
 
-
 .link::after{
   content: '';
   background-color: var(--secondary-colour);
@@ -323,8 +335,6 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 .link:hover::after{
   background-color: var(--primary-colour);
 }
-
-
 
 .skills-wrapper{
   display: flex;
